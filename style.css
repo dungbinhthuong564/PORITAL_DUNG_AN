@@ -1,44 +1,38 @@
-*{
+/* Reset cơ bản */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-.body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-    background-color: #210035;
+    min-height: 100dvh;
+    background-image: url('https://w0.peakpx.com/wallpaper/197/497/HD-wallpaper-roman-reigns-head-of-the-table-wrestling-wwe.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;   
-}
-
+  }
 .header{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 20px 0;
-    background-color: transparent;
-    position: static;
-    top: 0;
-    z-index: 1000;
-    gap: 20px;
-    border-bottom: 3px solid #630909; 
-    width: 100%; 
-    border-radius: 50px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-    transition: all 0.4s ease-in;
-    background-color:rgba(71, 3, 3, 0.6);
-}
-.logo {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        padding: 20px 0;
+        background-color: transparent;
+        position: static;
+        top: 0;
+        z-index: 1000;
+        gap: 20px;
+        border-bottom: 3px solid #630909; 
+        width: 100%; 
+        border-radius: 50px;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+        transition: all 0.4s ease-in;
+        background-color:rgba(71, 3, 3, 0.6);
+    }
+  .logo {
     font-size: 40px;
     font-weight: 600;
     background: linear-gradient(to right, #f5f1f1, #131212);
@@ -47,47 +41,83 @@
     color: transparent;
     text-align: center; 
     display: block;
-    margin: 0 auto;     
-}
-
-.hero {
-    height: 100vh;
-    background-image: url('https://i.ytimg.com/vi/K23txa-g5es/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB0YOlZV0NFKoWIaBz6b_72dYE5rQ'); 
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
   }
-  
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.4); /* Lớp mờ */
+  /* Particles.js nền động */
+  #particles-js {
+    position: fixed;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  /* Hero section */
+  .hero {
+    min-height: 100dvh;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    z-index: 1;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    justify-content: flex-start;
   }
   
-  .hero-content {
-    text-align: center;
-    color: white;
-    z-index: 2;
-    margin-top: auto;
-    margin-bottom: 100px;
+  /* Overlay có thể bỏ nếu không dùng */
+  .overlay {
+    width: 100%;
   }
-.projects {
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .typewriter {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    min-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    text-align: center;
+
+  }
+  .subtitle {
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 5px;
+    text-align: center;
+  }
+  #typing-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    animation: blink 0.7s infinite;
+    margin: 0 auto;
+  }
+@keyframes blink {
+    0% { border-color: white; }
+    50% { border-color: transparent; }
+    100% { border-color: white; }
+  }
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+  
+  /* Project section */
+  .projects {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,116 +168,21 @@
 .project-box a:hover {
     background-color: #0056b3;
 }
-.logo {
+  /* Footer */
+  .footer {
     text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Mờ nhẹ, không trắng */
     color: white;
-}
-
-.typewriter {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    min-height: 30px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid white;
-    text-align: center;
-  }
   
-  .subtitle {
-    font-size: 16px;
-    color: #ccc;
-    margin-top: 5px;
-    text-align: center;
-  }  
-#typing-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    border-right: 2px solid white;
-    white-space: nowrap;
-    overflow: hidden;
-    width: fit-content;
-    animation: blink 0.7s infinite;
-    margin: 0 auto;
-  }
-  
-  @keyframes blink {
-    0% { border-color: white; }
-    50% { border-color: transparent; }
-    100% { border-color: white; }
-  }
-  .features {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-}
-
-.feature-box {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    padding: 25px;
-    width: 250px;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    cursor: pointer;
-    transition: all 0.6s ease-in;
-    box-shadow: 0px 6px 8px 0px rgb(153, 50, 204,0.6);
-}
-.feature-box::before{
-    content:"";
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 0%;
-    background-color:rgb(153, 50, 204,0.6);
-    position: absolute;
-    transition: all 0.3s ;
-    z-index: -1; 
-}
-
-.feature-box:hover {
-    background: rgba(178, 90, 255, 0.1);
-    transform: translateY(-3px);
-    box-shadow: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(153, 50, 204, 0.6)
-}
-.feature-icon {
-    font-size: 30px;
-    color: #b25aff;
-    margin-bottom: 15px;
-    transition: transform 0.5s ease;
-}
-.feature-box:hover .feature-icon {
-    transform: rotate(360deg);
-}
-
-.feature-box h3 {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 8px;
-}
-
-.feature-box p {
-    font-size: 14px;
-    color: #ddd;
-}
-
-
-/* Social link */
-
-.footer {
-    text-align: center;
-    margin-top: 50px;
-    color: white;
-    font-size: 14px;
 }
 
 .social-links {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
     display: flex;
     justify-content: center;  
     gap: 20px;
@@ -267,6 +202,9 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     position: relative;
+    background: rgba(178, 90, 255, 0.2); /* sáng hơn */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* thêm đường viền nhẹ */
+    box-shadow: 0 0 8px rgba(178, 90, 255, 0.5);
 }
 
 .social-links a:hover,
@@ -274,3 +212,32 @@
     background: #b25aff;
     transform: scale(1.15);
 }
+@media (max-width: 768px) {
+    .typewriter {
+      font-size: 8vw;
+    }
+  
+    .subtitle {
+      font-size: 5vw;
+    }
+  
+    .projects {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-box {
+      width: 90%;
+    }
+  }
+  .container, .footer {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .social-links button:hover {
+    color: #00acee;
+  }
+  

@@ -1,4 +1,4 @@
-const text = "WELCOME TO DUNG AN PORTFOLIO   ";
+const text = "DUNG AN PORTFOLIO";
 const typingElement = document.getElementById("typing-text");
 
 let index = 0;
