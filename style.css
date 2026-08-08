@@ -634,6 +634,24 @@ h1 span {
     url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80");
 }
 
+.project-media-todo {
+  background-image:
+    linear-gradient(135deg, rgba(79, 70, 229, 0.75), rgba(23, 18, 15, 0.86)),
+    url("https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1000&q=80");
+}
+
+.project-media-spotify {
+  background-image:
+    linear-gradient(135deg, rgba(30, 215, 96, 0.75), rgba(23, 18, 15, 0.9)),
+    url("https://images.unsplash.com/photo-1614680376593-902f74fa0d41?auto=format&fit=crop&w=1000&q=80");
+}
+
+.project-media-finance {
+  background-image:
+    linear-gradient(135deg, rgba(16, 185, 129, 0.75), rgba(23, 18, 15, 0.86)),
+    url("https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80");
+}
+
 .project-media-contact {
   background-image:
     linear-gradient(135deg, rgba(23, 18, 15, 0.22), rgba(255, 106, 61, 0.38)),
