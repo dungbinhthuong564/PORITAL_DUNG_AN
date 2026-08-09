@@ -744,6 +744,279 @@ h1 span {
   background: var(--accent);
 }
 
+/* Project Media for AI Study Hub */
+.project-media-study-hub {
+  background-image:
+    linear-gradient(135deg, rgba(244, 63, 94, 0.75), rgba(23, 18, 15, 0.86)),
+    url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1000&q=80");
+}
+
+/* Hero Contact Badges */
+.hero-contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 32px;
+  margin-top: 18px;
+  width: 100%;
+}
+
+.contact-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.82rem;
+  font-weight: 550;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-badge a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  width: 100%;
+}
+
+.contact-badge:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background: rgba(255, 106, 61, 0.08);
+  color: #fff;
+}
+
+.contact-badge i {
+  color: var(--accent);
+  font-size: 0.95rem;
+  width: 16px;
+  text-align: center;
+}
+
+/* Skills & Interests Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.skills-card {
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: 0 18px 46px rgba(44, 31, 24, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-4px);
+  background: var(--card-solid);
+  box-shadow: var(--shadow);
+  border-color: rgba(255, 106, 61, 0.2);
+}
+
+.skills-card i {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 24px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--cream);
+  background: var(--dark);
+  font-size: 1.25rem;
+}
+
+.skills-card h3 {
+  color: var(--ink);
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 8px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-list li {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 20px;
+}
+
+.skills-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Project Card Details and Actions */
+.project-desc {
+  list-style: none;
+  margin: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-desc li {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.55;
+  position: relative;
+  padding-left: 16px;
+}
+
+.project-desc li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn-demo {
+  color: var(--cream);
+  background: var(--accent);
+  box-shadow: 0 8px 20px rgba(255, 106, 61, 0.2);
+}
+
+.btn-demo:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 106, 61, 0.35);
+}
+
+.btn-github {
+  color: var(--ink);
+  background: transparent;
+  border-color: var(--line);
+}
+
+.btn-github:hover {
+  background: rgba(23, 18, 15, 0.05);
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+
+/* Education & Activities */
+.edu-act-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.edu-column h3,
+.act-column h3 {
+  color: var(--cream);
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+  line-height: 1.2;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 106, 61, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.timeline-badge {
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 106, 61, 0.12);
+  border: 1px solid rgba(255, 106, 61, 0.2);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.timeline-date {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.timeline-item h4 {
+  color: var(--cream);
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.timeline-sub {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.timeline-item p {
+  color: rgba(255, 246, 232, 0.65);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 900px) {
   .site-header {
     grid-template-columns: 1fr auto;
@@ -777,9 +1050,12 @@ h1 span {
     min-height: 440px;
   }
 
+  .skills-grid,
   .service-grid,
-  .project-list {
+  .project-list,
+  .edu-act-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .project-card-large {
@@ -819,6 +1095,11 @@ h1 span {
 
   .hero {
     min-height: auto;
+  }
+
+  .hero-contact-info {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .stats {
